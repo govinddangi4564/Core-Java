@@ -6,7 +6,7 @@ import java.util.ArrayList;
 public class CollectionTest {
 	public static void main(String[] args) {
 		ArrayList al = new ArrayList();
-		al.add("Ramtula");  						// Collectiona
+		al.add("Ramtula");  						// Collection
 		al.add("Kaand");
 		al.add("Kishkinda");
 		al.add(7410);
