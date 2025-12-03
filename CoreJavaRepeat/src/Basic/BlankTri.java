@@ -1,4 +1,4 @@
-package infoviaans.com.basics;
+package Basic;
 
 public class BlankTri {
      public static void main(String arg[]) {
