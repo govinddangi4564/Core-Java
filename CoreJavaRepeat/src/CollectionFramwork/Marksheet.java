@@ -1,5 +1,7 @@
 package CollectionFramwork;
 
+import java.util.Objects;
+
 public class Marksheet {
 	private String name;
 	private int age;
@@ -16,6 +18,29 @@ public class Marksheet {
 		this.age = age;
 		this.rollNo = rollNo;
 		this.percentage = percentage;
+	}
+	
+	
+
+	@Override
+	public int hashCode() {
+		return Objects.hash(age, name, percentage, rollNo);
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (!(obj instanceof Marksheet))
+			return false;
+		Marksheet other = (Marksheet) obj;
+		return this.getRollNo().equals(other.getRollNo());
+		
+//		return age == other.age && Objects.equals(name, other.name)
+//				&& Double.doubleToLongBits(percentage) == Double.doubleToLongBits(other.percentage)
+//				&& Objects.equals(rollNo, other.rollNo);
 	}
 
 	@Override
