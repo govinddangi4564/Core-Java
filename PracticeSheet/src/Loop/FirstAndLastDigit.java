@@ -18,5 +18,16 @@ public class FirstAndLastDigit {
 		System.out.println("Subtract = " + (firstDigit - lastDigit));
 		System.out.println("Multiplication = " + (firstDigit * lastDigit));
 		System.out.println("Division = " + (firstDigit / lastDigit));
+		
+		System.out.println();
+		System.out.println("Swap digits...........");
+		
+		int temp = firstDigit;
+		firstDigit = lastDigit;
+		lastDigit = temp;
+		
+		System.out.println("First digit = " + firstDigit);
+		System.out.println("Last digit = " + lastDigit);
+		
 	}
 }
