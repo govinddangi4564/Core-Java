@@ -37,7 +37,7 @@ public class InsertNewElement {
 //
 //		newArr[pos] = ele;
 //
-//		for (int i = pos; i < n; i++) {
+//		for (int i = pos + 1; i < n; i++) {
 //			newArr[i] = arr[i];
 //		}
 //
