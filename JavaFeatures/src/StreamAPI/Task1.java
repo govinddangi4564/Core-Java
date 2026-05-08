@@ -24,5 +24,34 @@ public class Task1 {
 		System.out.println();
 		
 		list.stream().filter(a -> a.getName().startsWith("A")).forEach(a -> System.out.println(a));
+		
+		// add the 2 years of every employee age 
+		list.stream().map( a ->{
+			a.setAge( a.getAge() + 2);
+			return a;
+		}).forEach(a -> System.out.println(a));
+		
+		// convert all the employee name into capital letters.. 
+		
+		list.stream().map( a ->{
+			a.setName( a.getName().toUpperCase());
+			return a;
+		}).forEach(a -> System.out.println(a));
+		
+		System.out.println();
+		
+		// sort the data based on age
+		
+		list.stream().sorted((a , b) -> a.getAge() - b.getAge()).forEach(a -> System.out.println(a));
+		
+		System.out.println();
+		
+		list.stream().sorted((a , b) -> b.getAge() - a.getAge()).forEach(a -> System.out.println(a));
+		System.out.println();
+		
+		// sort the data based on Name
+		
+		list.stream().sorted((a,b) -> a.getName().compareTo(b.getName())).forEach(a -> System.out.println(a));
+		
 	}
 }
